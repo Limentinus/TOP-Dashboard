@@ -6,13 +6,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"> 
+
     <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="sidebar"></div>
-        <div class="header"></div>
-        <div class="main"></div>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="./files/view-dashboard.png" alt="">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="nav-buttons">
+                <div class="nav-button"><span class="mdi mdi-home"></span><a href="#" class="nav-link">Home</a></div>
+                
+                <div class="nav-button"><span class="mdi mdi-card-account-details-outline "></span><a href="#" class="nav-link">Profile</a></div>
+                
+                <div class="nav-button"> <span class="mdi mdi-message-reply"></span><a href="#" class="nav-link">Messages</a></div>
+                
+                <div class="nav-button"><span class="mdi mdi-clock-time-three"></span><a href="#" class="nav-link">History</a></div>
+                
+                <div class="nav-button"><span class="mdi mdi-note-multiple"></span><a href="#" class="nav-link">Tasks</a></div>
+                
+                <div class="nav-button"><span class="mdi mdi-account-group"></span><a href="#" class="nav-link">Communities</a></div>
+                  
+            </div>
+            <div class="settings-buttons">
+                <div class="nav-button">
+                    <div class="nav-button"><span class="mdi mdi-cog"></span><a href="#" class="nav-link">Settings</a></div>
+                </div>
+                <div class="nav-button">
+                    <div class="nav-button"><span class="mdi mdi-help-box"></span><a href="#" class="nav-link">Support</a></div>
+                </div>
+                <div class="nav-button">
+                    <div class="nav-button"><span class="mdi mdi-shield-check"></span><a href="#" class="nav-link">Privacy</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="top">
+                <div class="search">
+                  <button type="submit"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                </svg></button>  
+                  <input type="text">
+                </div>
+                <div class="user-info">
+                    <button class="bell"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+                    </svg></button>
+                    <a href="#" class="user-icon"><img src="./files/Avatar-PNG-Free-Download.png" alt="Batman Icon"></a>
+                    <a href="#" class="user-name">Batman</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <img src="./files/Avatar-PNG-Free-Download.png" alt="Batman" height="50">
+                    <div class="greeting">
+                        <p>Hi there,</p>
+                        <h2>Batman (@batman)</h2>
+                    </div>
+                </div>
+                <div class="right">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="projects">
+                <h3 class="sub-heading">Your Projects</h3>
+                <div class="project-item">
+                    <div class="text-box">
+                        <h4>Super Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut lectus arcu bibendum at varius vel pharetra. </p>
+                    </div>
+                    <div class="project-buttons">
+                        <button><span class="mdi mdi-star-remove-outline"></span></button>
+                        <button><span class="mdi mdi-eye-plus-outline"></span></button>
+                        <button><span class="mdi mdi-share-variant-outline turn"></span></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="text-box">
+                        <h4>Less Cool Project</h4>
+                        <p>Quis auctor elit sed vulputate mi sit amet. Sed euismod nisi porta lorem mollis aliquam ut porttitor. Dictum at tempor commodo ullamcorper a. </p>
+                    </div>
+                    <div class="project-buttons">
+                        <button><span class="mdi mdi-star-remove-outline"></span></button>
+                        <button><span class="mdi mdi-eye-plus-outline"></span></button>
+                        <button><span class="mdi mdi-share-variant-outline turn"></span></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="text-box">
+                        <h4>Impossible App</h4>
+                        <p>Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Platea dictumst quisque sagittis purus sit amet volutpat consequat. </p>
+                    </div>
+                    <div class="project-buttons">
+                        <button><span class="mdi mdi-star-remove-outline"></span></button>
+                        <button><span class="mdi mdi-eye-plus-outline"></span></button>
+                        <button><span class="mdi mdi-share-variant-outline turn"></span></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="text-box">
+                        <h4>Easy Peasy App</h4>
+                        <p>Lorem ipsum dolor sit amet. Pulvinar sapien et ligula ullamcorper. Risus sed vulputate odio ut enim. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus.  </p>
+                    </div>
+                    <div class="project-buttons">
+                        <button><span class="mdi mdi-star-remove-outline"></span></button>
+                        <button><span class="mdi mdi-eye-plus-outline"></span></button>
+                        <button><span class="mdi mdi-share-variant-outline turn"></span></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="text-box">
+                        <h4>Ad Blocker</h4>
+                        <p>Et netus et malesuada fames ac turpis egestas. Massa sed elementum tempus egestas sed sed risus. Non tellus orci ac auctor augue mauris augue. Praesent tristique magna sit amet. </p>
+                    </div>
+                    <div class="project-buttons">
+                        <button><span class="mdi mdi-star-remove-outline"></span></button>
+                        <button><span class="mdi mdi-eye-plus-outline"></span></button>
+                        <button><span class="mdi mdi-share-variant-outline turn"></span></button>
+                    </div>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="text-box">
+                        <h4>Money Maker</h4>
+                        <p>At quis risus sed vulputate odio. A iaculis at erat pellentesque adipiscing commodo elit at. Volutpat ac tincidunt vitae semper quis lectus. Arcu non sodales neque sodales. </p>
+                    </div>
+                    <div class="project-buttons">
+                        <button><span class="mdi mdi-star-remove-outline"></span></button>
+                        <button><span class="mdi mdi-eye-plus-outline"></span></button>
+                        <button><span class="mdi mdi-share-variant-outline turn"></span></button>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="rightside">
+                <h3 class="sub-heading">Announcements</h3>
+                <div class="announcements">
+                    <div class="announce-box">
+                        <div class="announce border">
+                            <h4>Site Maintenance</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ullam earum quae culpa reprehenderit...</p>
+                        </div>
+                        <div class="announce border">
+                            <h4>Cumunity Share Day</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ullam earum quae culpa reprehenderit...</p>
+                        </div>
+                        <div class="announce">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ullam earum quae culpa reprehenderit quod sequi cum, aut ipsa unde</p>
+                        </div>
+
+                    </div>
+                </div>
+                <h3 class="sub-heading">Trending</h3>
+                <div class="trending">
+                    
+                        <div class="user-box">
+                            <img src="./files/Avatar-PNG-High-Quality-Image.png" alt="">
+                            <div class="tags">
+                                <h4>@tegan</h4>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </div>
+
+                        <div class="user-box">
+                            <img src="./files/Avatar-PNG-Pic.png" alt="">
+                            <div class="tags">
+                                <h4>@morgan</h4>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </div>
+
+                        <div class="user-box">
+                            <img src="./files/Girl-Avatar-Transparent-Background-PNG.png" alt="">
+                            <div class="tags">
+                                <h4>@kendall</h4>
+                                <p>Life Changing App</p>
+                            </div>
+                        </div>
+
+                        <div class="user-box">
+                            <img src="./files/Girl-Avatar-Transparent.png" alt="">
+                            <div class="tags">
+                                <h4>@Alex</h4>
+                                <p>Not Traffic Maker</p>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
